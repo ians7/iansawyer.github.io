@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects — Ian J. Sawyer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html" class="nav-brand">Ian J. Sawyer</a>
+      <button class="menu-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="resume.html">Resume</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="container">
+        <div class="page-hero">
+          <h1>Projects</h1>
+          <p>
+            Academic and personal projects spanning systems programming and
+            full-stack development.
+          </p>
+        </div>
+
+        <div class="project-list">
+
+          <div class="project-row">
+            <div class="project-row-header">
+              <h3>Microkernel OS Research</h3>
+              <span class="date">Dec 2025 – Present</span>
+            </div>
+            <p class="project-hook">
+              Research project with Dr. Mohammad Noureddine — designing a microkernel OS from
+              scratch to evaluate microkernel viability on modern hardware, with emphasis on
+              security and IPC.
+            </p>
+            <ul class="project-bullets">
+              <li>Migrated build system from Make to Meson, improving maintainability and iteration speed</li>
+              <li>Designed and implemented the process control block (PCB), weighing trade-offs in scheduling, fault handling, and capability management</li>
+              <li>Designed and implemented the bootstrapping ram filesystem</li>
+              <li>Implemented kernel/user space separation in virtual memory</li>
+              <li>Implemented the ELF loader and the designed</li>
+            </ul>
+            <div class="project-footer">
+              <div class="project-tags">
+                <span class="project-tag">C</span>
+                <span class="project-tag">OS Design</span>
+                <span class="project-tag">System Design</span>
+                <span class="project-tag">Build Systems</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-row">
+            <div class="project-row-header">
+              <h3>Capstone — Puzzle Hunt Management Platform</h3>
+              <span class="date">Aug 2025 – Present</span>
+            </div>
+            <p class="project-hook">
+              Full-stack platform for managing live puzzle hunt events, built with a four-person
+              team for a real client.
+            </p>
+            <ul class="project-bullets">
+              <li>Developed features using MySQL, a Node.js REST API, and Svelte</li>
+              <li>Designed responsive interfaces for puzzle navigation, team tracking, and live event interaction</li>
+              <li>Coordinated with client stakeholders to refine requirements and adapt implementations based on feedback</li>
+              <li>Followed an agile workflow with 1-week sprints, GitHub Issues for task tracking, and weekly sprint review and planning meetings</li>
+            </ul>
+            <div class="project-footer">
+              <div class="project-tags">
+                <span class="project-tag">Node.js</span>
+                <span class="project-tag">Svelte</span>
+                <span class="project-tag">MySQL</span>
+                <span class="project-tag">REST API</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-row">
+            <div class="project-row-header">
+              <h3>Network Stack for Xv6</h3>
+              <span class="date">Jun 2025 – Aug 2025</span>
+            </div>
+            <p class="project-hook">
+              Implemented a custom network driver and UDP network stack for the Xv6 OS,
+              enabling inter-machine packet transmission.
+            </p>
+            <ul class="project-bullets">
+              <li>Built Ethernet, ARP, and UDP support with full packet construction and parsing</li>
+              <li>Implemented a socket API (socket, bind, recvfrom, sendto) modeled after Linux sockets, including the underlying system calls</li>
+              <li>Debugged protocol interactions in QEMU using Wireshark</li>
+            </ul>
+            <div class="project-footer">
+              <div class="project-tags">
+                <span class="project-tag">C</span>
+                <span class="project-tag">Networking</span>
+                <span class="project-tag">UDP / ARP</span>
+                <span class="project-tag">QEMU</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/ians7/xv6_network_stack" target="_blank">GitHub →</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Ian J. Sawyer</p>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>

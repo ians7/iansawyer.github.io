@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume — Ian J. Sawyer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-brand">Ian J. Sawyer</a>
+    <button class="menu-toggle" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="resume.html">Resume</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="container resume-wrapper">
+
+      <div class="resume-header">
+        <div class="resume-header-main">
+          <h1>Ian J. Sawyer</h1>
+          <p class="resume-title">Computer Science Student — Low-Level Systems Programming</p>
+          <div class="resume-contact">
+            <a href="mailto:sawyerij@rose-hulman.edu">sawyerij@rose-hulman.edu</a>
+            <span>(812) 592-0558</span>
+            <span>North Vernon, IN</span>
+          </div>
+        </div>
+        <button class="btn" onclick="window.print()">Print / Save PDF</button>
+      </div>
+
+      <!-- Objective -->
+      <div class="resume-section">
+        <h2>Objective</h2>
+        <div class="resume-item">
+          <p>
+            Computer science student eager to apply knowledge in low-level programming to secure
+            a full-time position as a low-level systems software engineer.
+          </p>
+        </div>
+      </div>
+
+      <!-- Education -->
+      <div class="resume-section">
+        <h2>Education</h2>
+        <div class="resume-item">
+          <div class="resume-item-header">
+            <h3>Bachelor of Science, Computer Science</h3>
+            <span class="date">May 2026</span>
+          </div>
+          <p class="org">Rose-Hulman Institute of Technology — Terre Haute, IN</p>
+          <ul>
+            <li>GPA: 2.76 &nbsp;·&nbsp; Major GPA: 3.14</li>
+            <li>
+              <em>Relevant Courses:</em> Computer Architecture, Software Design,
+              Software Requirements Engineering, Operating Systems, Operating System Design,
+              Network Security, Computer Networks, Design and Analysis of Algorithms
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Skills -->
+      <div class="resume-section">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h3>Languages</h3>
+            <div class="skill-list">C · Java · JavaScript · Python · SQL · bash</div>
+          </div>
+          <div class="skill-group">
+            <h3>Tools &amp; Technologies</h3>
+            <div class="skill-list">Linux CLI · Git · Network programming (TCP/UDP, raw sockets) · QEMU · Wireshark · Meson · Make</div>
+          </div>
+          <div class="skill-group">
+            <h3>Operating Systems</h3>
+            <div class="skill-list">Linux · Windows</div>
+          </div>
+          <div class="skill-group">
+            <h3>Concepts</h3>
+            <div class="skill-list">Object Oriented Design · OS internals · IPC · Network protocol design</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Work Experience -->
+      <div class="resume-section">
+        <h2>Work Experience</h2>
+        <div class="resume-item">
+          <div class="resume-item-header">
+            <h3>CNC Wire Operator</h3>
+            <span class="date">June 2025 – August 2025</span>
+          </div>
+          <p class="org">Montrow Group — North Vernon, IN</p>
+          <ul>
+            <li>Collaborated with members of other departments to ensure timely and efficient job completion.</li>
+            <li>Designed efficient part set-ups for the mass-manufacturing of steel parts, improving workflow and efficiency.</li>
+            <li>Performed detailed inspections using specification sheets and internal quality standards to ensure product accuracy and compliance.</li>
+            <li>Troubleshot setup and production issues to minimize downtime and maintain output targets.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Projects -->
+      <div class="resume-section">
+        <h2>Projects</h2>
+
+        <div class="resume-item">
+          <div class="resume-item-header">
+            <h3>Capstone Project: Puzzle Hunt Management Platform</h3>
+            <span class="date">August 2025 – Present</span>
+          </div>
+          <ul>
+            <li>Developed full-stack features for a puzzle hunt platform using MySQL, a Node.js REST API, and Svelte, enabling teams to securely access and solve puzzles during live events.</li>
+            <li>Designed and implemented responsive user-facing interfaces in Svelte, improving usability for puzzle navigation, puzzle tracking, and live event interaction.</li>
+            <li>Collaborated with a four-person engineering team and coordinated with the client to refine requirements and adjust implementations based on feedback.</li>
+          </ul>
+        </div>
+
+        <div class="resume-item">
+          <div class="resume-item-header">
+            <h3>Microkernel Operating System Research Project</h3>
+            <span class="date">December 2025 – Present</span>
+          </div>
+          <ul>
+            <li>Researched microkernel and monolithic kernel architectures to inform the design of a custom microkernel OS, with emphasis on process isolation, inter-process communication (IPC), and kernel responsibility boundaries.</li>
+            <li>Performed in-depth analysis of process control block (PCB) designs in existing production-level operating systems to design and implement a PCB, weighing real-world trade-offs in scheduling, fault handling, and capability management.</li>
+            <li>Modernized the project's build infrastructure by migrating from a Make-based system to Meson, improving maintainability and iteration speed for development.</li>
+          </ul>
+        </div>
+
+        <div class="resume-item">
+          <div class="resume-item-header">
+            <h3>Personal Project: Network Stack for the Xv6 OS</h3>
+            <span class="date">June 2025 – August 2025</span>
+          </div>
+          <ul>
+            <li>Designed and implemented a custom network driver and UDP network stack for the Xv6 operating system, enabling inter-machine packet transmission.</li>
+            <li>Built support for Ethernet, ARP, and UDP, as well as packet construction/parsing.</li>
+            <li>Implemented a socket API into Xv6, modeled after Linux sockets, supporting socket(), bind(), recvfrom(), and sendto().</li>
+            <li>Debugged low-level networking in QEMU and with Wireshark, developing deeper understanding of protocol interactions and driver/OS boundaries.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Activities -->
+      <div class="resume-section">
+        <h2>Activities</h2>
+        <div class="resume-item">
+          <p class="org">Rose-Hulman</p>
+          <ul class="activity-list">
+            <li><span>Competitive Programming Team</span><span class="date">2024 – 2025</span></li>
+            <li><span>Intramural Sports</span><span class="date">2022 – Present</span></li>
+          </ul>
+        </div>
+        <div class="resume-item">
+          <p class="org">High School</p>
+          <ul class="activity-list">
+            <li><span>Soccer — 2 years captain</span><span class="date">2018 – 2022</span></li>
+            <li><span>Baseball — 4 years varsity</span><span class="date">2018 – 2022</span></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Ian J. Sawyer</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
